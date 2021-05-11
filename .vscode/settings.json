@@ -5,6 +5,7 @@
   "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
   "clangd.onConfigChanged": "restart",
   "clangd.arguments": [
-    "--query-driver=\"%LOCALAPPDATA%\\Arduino15\\packages\\*\\tools\\**\\*-gcc.exe,%LOCALAPPDATA%\\Arduino15\\packages\\*\\tools\\**\\*-g++.exe\""
+    "--log=verbose",
+    "--query-driver=C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\*\\tools\\**\\*-gcc.exe,C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\*\\tools\\**\\*-g++.exe"
   ]
 }
