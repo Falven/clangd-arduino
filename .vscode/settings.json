@@ -1,0 +1,10 @@
+{
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "C_Cpp.autocomplete": "Disabled",
+  "C_Cpp.errorSquiggles": "Disabled",
+  "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+  "clangd.onConfigChanged": "restart",
+  "clangd.arguments": [
+    "--query-driver=\"%LOCALAPPDATA%\\Arduino15\\packages\\*\\tools\\**\\*-gcc.exe,%LOCALAPPDATA%\\Arduino15\\packages\\*\\tools\\**\\*-g++.exe\""
+  ]
+}

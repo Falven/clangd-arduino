@@ -1,0 +1,5 @@
+Checks:          '-*, altera-*, boost-*, bugprone-*, cert-*, clang-analyzer-*, cppcoreguidelines-*, google-*, llvm-*, modernize-*, performance-*, portability-*, readability-*'
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*'
+FormatStyle:     google
+User:            user
