@@ -1,5 +1,3 @@
-#include <Arduino.h>
-
 #include <type_traits>
 
 using CD = typename std::conditional<true, int, double>::type;
