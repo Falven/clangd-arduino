@@ -7,8 +7,7 @@
   "clangd.onConfigChanged": "restart",
   "clangd.arguments": [
     "--log=verbose",
-    "--query-driver=C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4/bin/arm-none-eabi-gcc.exe,C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4/bin/arm-none-eabi-g++.exe"
-    // "--query-driver=C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4/bin/arm-none-eabi-gcc,C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4/bin/arm-none-eabi-g++"
-    // "--query-driver=C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\*\\tools\\**\\*-gcc,C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\*\\tools\\**\\*-g++"
+    "-clang-tidy",
+    "--query-driver=C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\*\\tools\\**/*-g*.exe"
   ],
 }
