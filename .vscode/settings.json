@@ -7,7 +7,8 @@
   "clangd.onConfigChanged": "restart",
   "clangd.arguments": [
     "--log=verbose",
-    "--query-driver=C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\*\\tools\\**/*-g*.exe"
+    "--query-driver=C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\*\\tools\\**/*-g*.exe",
+    "--clang-tidy"
   ],
   "files.associations": {
     ".clang-format": "yaml",
