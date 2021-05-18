@@ -1,0 +1,5 @@
+If:
+  PathMatch: .*\.ino
+CompileFlags:
+  Remove: -x
+  Add: [-xc++-cpp-output]
