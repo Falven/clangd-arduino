@@ -2,8 +2,6 @@
   "C_Cpp.intelliSenseEngine": "Disabled",
   "C_Cpp.autocomplete": "Disabled",
   "C_Cpp.errorSquiggles": "Disabled",
-  "arduino.disableIntelliSenseAutoGen": true,
-  // "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
   "clangd.onConfigChanged": "restart",
   "clangd.arguments": [
     "--log=verbose",
