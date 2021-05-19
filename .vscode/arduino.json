@@ -1,5 +1,6 @@
 {
     "board": "arduino:samd:mkrwifi1010",
     "output": "./build",
-    "sketch": "clangd-arduino.ino"
+    "sketch": "clangd-arduino.ino",
+    "postbuild": "node ./scripts/postbuild.js"
 }
