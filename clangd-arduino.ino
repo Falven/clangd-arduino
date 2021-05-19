@@ -2,6 +2,12 @@
 
 #include <vector>
 
-void setup() {}
+const static auto kBaudRate = 9600U;
+
+void setup() {
+  Serial.begin(kBaudRate);
+  while (!Serial) {
+  }
+}
 
 void loop() {}
