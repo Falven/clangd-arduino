@@ -1,0 +1,4 @@
+Issues:
+* On Windows, the Arduino-generated `compile_commands.json` may be missing the `.exe` extension, which causes `clangd` to not be able to query the compiler driver. `postbuild.js` script appends the extension for now.
+* If using `gcc-arm-none-eabi-7-2017-Q4` or earlier, there is a bug where the extracted system includes (which are passed to the compiler via the `-isystem` flag) will have C linkage instead of C++ linkage, which causes a lot of compiler warnings, especially through `clangd` intellisense...
+** A drop-in replacement of `gcc-arm-none-eabi-10-2020-q4-major` into the toolchain folder fixes this issue... or you can wait for Arduino to update the toolchain.
