@@ -2,6 +2,7 @@
   "C_Cpp.intelliSenseEngine": "Disabled",
   "C_Cpp.autocomplete": "Disabled",
   "C_Cpp.errorSquiggles": "Disabled",
+  "arduino.disableIntelliSenseAutoGen": true,
   "clangd.onConfigChanged": "restart",
   "clangd.arguments": [
     "--log=verbose",
