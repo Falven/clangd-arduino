@@ -1,5 +1,4 @@
-# If:
-#   PathMatch: .*\.ino
-# CompileFlags:
-#   Remove: -x
-#   Add: [-xc++]
+If:
+  PathMatch: .*\.ino
+CompileFlags:
+  Remove: [--target, --driver-mode, -resource-dir]

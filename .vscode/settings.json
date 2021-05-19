@@ -6,8 +6,12 @@
   "clangd.onConfigChanged": "restart",
   "clangd.arguments": [
     "--log=verbose",
-    "--query-driver=C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\*\\tools\\**/*-g*.exe"
+    "--query-driver=C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\*\\tools\\**/*-g*.exe",
+    "--background-index"
   ],
+  "[ino]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
   "files.associations": {
     ".clang-format": "yaml",
     ".clang-tidy": "yaml",
