@@ -5,7 +5,7 @@ let arduino = JSON.parse(fs.readFileSync(".vscode/arduino.json"));
 let compileCommands = JSON.parse(
   fs.readFileSync(`${arduino.output}/compile_commands.json`)
 );
-if (compileCommands && os.platform() == "win32") {
+if (compileCommands && compileCommands.length > 0 && os.platform() == "win32") {
   fixCompilerArgs(compileCommands);
 }
 fs.writeFileSync(
