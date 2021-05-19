@@ -1,4 +1,0 @@
-If:
-  PathMatch: .*\.ino
-CompileFlags:
-  Remove: [--target, --driver-mode, -resource-dir]
