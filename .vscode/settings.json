@@ -5,11 +5,15 @@
   "arduino.disableIntelliSenseAutoGen": true,
   "clangd.onConfigChanged": "restart",
   "clangd.arguments": [
-    "--log=verbose",
+    "--compile-commands-dir=${workspaceFolder}\\build",
     "--query-driver=C:\\Users\\falve\\AppData\\Local\\Arduino15\\packages\\*\\tools\\**/*-g*.exe",
+    "--log=verbose",
     "--background-index"
   ],
   "[ino]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "files.associations": {

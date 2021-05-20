@@ -17,16 +17,28 @@ if (!compileCommands) {
 
 if (compileCommands.length > 0) {
   if (os.platform() == "win32") {
-    fixWindowsCompilerArgs(compileCommands);
+    fixWindowsCompilerArg(compileCommands);
 
     fs.writeFileSync(
       compilationDatabasePath,
       JSON.stringify(compileCommands, null, 2)
     );
   }
+
+  // const vscodePath = process.argv[3];
+  // if (vscodePath) {
+  //   const vscodeSettingsPath = path.resolve(vscodePath, "settings.json");
+  //   let vscodeSettings = JSON.parse(fs.readFileSync(vscodeSettingsPath));
+  //   createSettingsFallbackFlags(compileCommands, vscodeSettings);
+
+  //   fs.writeFileSync(
+  //     vscodeSettingsPath,
+  //     JSON.stringify(vscodeSettings, null, 2)
+  //   );
+  // }
 }
 
-function fixWindowsCompilerArgs(compileCommands) {
+function fixWindowsCompilerArg(compileCommands) {
   compileCommands.forEach((command) => {
     if (command.arguments.length > 0) {
       if (!command.arguments[0].endsWith(".exe")) {
@@ -35,3 +47,22 @@ function fixWindowsCompilerArgs(compileCommands) {
     }
   });
 }
+
+// function createSettingsFallbackFlags(compileCommands, vscodeSettings) {
+//   const compilerFlagRegex = /(?!^-c)(?!^-o)(?:^-{1,2}.+$)|(?:^.*=.*$)/;
+//   let commandToExtract = compileCommands[0];
+//   let flags = [];
+//   const args = commandToExtract.arguments;
+//   const argsLength = args.length;
+//   for (let i = 0; i < argsLength; ++i) {
+//     if (i == 0) {
+//       flags.push(args[i]);
+//     } else {
+//       const flag = compilerFlagRegex.exec(args[i]);
+//       if (flag !== null) {
+//         flags.push(flag[0]);
+//       }
+//     }
+//   }
+//   vscodeSettings["clangd.fallbackFlags"] = flags;
+// }
